@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://images.unsplash.com/photo-1552581234-26160f608093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHN1cnZleXxlbnwwfHwwfHx8MA%3D%3D"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container center">
+      <div id="form-container">
+        <header class="center">
+        <h2>Survey Form</h2>
+      </header>
+      <main>
+        <form >
+          <div class="box">
+            <lable for="name">Name</lable>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value=""
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="box">
+            <lable for="dob">Date Of Birth</lable>
+            <input
+              id="dob"
+              type="date"
+              name="DOB"
+              value=""
+              placeholder="Enter Your DOB"
+              required
+            />
+          </div>
+          <div class="box">
+            <label for="age">Age:</label>
+            <select id="age" name="age">
+              <option value="under18">Under 18</option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-45">36-45</option>
+              <option value="46-60">46-60</option>
+              <option value="60plus">60+</option></select
+            >
+          </div>
+          <div class="box">
+            <lable for="email">Email</lable>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value=""
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="box">
+            <p>Gender:</p>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input
+                  type="radio"
+                  id="transgender"
+                  name="gender"
+                  value="transgender"
+                />
+                <label for="female">Transgender</label>
+
+            </div>
+          </div>
+          <div class="box">
+            <p>Interests:</p>
+            <div>
+
+                <input
+                  type="checkbox"
+                  id="coding"
+                  name="interests"
+                  value="coding"
+                />
+                <label for="coding">Coding</label><br />
+                <input type="checkbox" id="music" name="interests" value="music" />
+                <label for="music">Music</label><br /><br />
+            </div>
+          </div>
+          <div class="box">
+            <label for="opinion">Study Plan</label>
+            <textarea
+              name="opinion"
+              id="opinion"
+              cols="50"
+              rows="8"
+            ></textarea>
+          <div class="box center">
+            <input type="button" class="button" value="Submit">
+          </div>
+        </form>
+      </main>
+    </div>
+    </section>
+
+  </body>
+</html>
